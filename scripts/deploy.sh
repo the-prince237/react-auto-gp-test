@@ -34,7 +34,7 @@ if git diff-index --quiet HEAD --;
 
         # Switch to gh-pages branchj and merge relai
         git checkout gh-pages
-        git merge relai --force
+        git merge relai
 
         # push built version to online branch
         git push -u origin gh-pages --force
