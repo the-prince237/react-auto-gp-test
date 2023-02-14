@@ -34,9 +34,11 @@ if git diff-index --quiet HEAD --;
 
         # Switch to gh-pages branchj and merge relai
         git checkout gh-pages
-        git merge relai
+        git merge relai --allow-unrelated-histories
 
         # push built version to online branch
+        git add .
+        git commit -m "updating built version"
         git push -u origin gh-pages --force
 
         # delete relai branch
