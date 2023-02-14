@@ -18,7 +18,6 @@ if git diff-index --quiet HEAD --;
         yarn build
 
         # remove all files and folders instead of build
-        rm -r node_modules
         rm -r public
         rm -r src
         rm *.*
