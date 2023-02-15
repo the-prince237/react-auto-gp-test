@@ -34,7 +34,7 @@ if git diff-index --quiet HEAD --;
 
         # merge relai in gh-pages
         git checkout gh-pages
-        git merge -s theirs relai --allow-unrelated-histories
+        git merge relai --allow-unrelated-histories
 
         # push built version to online branch
         git push -u origin gh-pages --force
