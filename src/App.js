@@ -9,6 +9,9 @@ function App() {
         <p>
           App container <code>Edited</code> for the very first time.
         </p>
+        <p>
+          I think this time it's ok ... Totaly perfect, untill we find a better perfection ...
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"

@@ -32,14 +32,11 @@ if git diff-index --quiet HEAD --;
         git add .
         git commit -m "preparing gh-pages root"
 
-        # merge
-        git merge -s ours gh-pages
+        # merge relai in gh-pages
         git checkout gh-pages
-        git merge relai
+        git merge -s theirs relai --allow-unrelated-histories
 
         # push built version to online branch
-        git add .
-        git commit -m "updating built version"
         git push -u origin gh-pages --force
 
         # delete relai branch
