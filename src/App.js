@@ -10,7 +10,7 @@ function App() {
           App container <code>Edited</code> for the very first time.
         </p>
         <p>
-          I think this time it's ok ... Totaly perfect, untill we find a better perfection 3...
+          I think this time it's ok ... Totaly perfect, untill we find a better perfection 3 ...
         </p>
         <a
           className="App-link"
